@@ -6,12 +6,18 @@ shirikisha/
 ├── backend/
 │   ├── app/
 │   │   ├── __init__.py
-│   │   ├── main.py              # FastAPI application entry point
+│   │   ├── main.py#FastAPIapplication entry point
+
 │   │   ├── config.py           # Configuration management
+
 │   │   ├── database.py         # Database connection & models
+
 │   │   ├── models.py           # SQLAlchemy ORM models
+
 │   │   ├── schemas.py          # Pydantic schemas for validation
+
 │   │   ├── crud.py             # CRUD operations
+
 │   │   ├── api/
 │   │   │   ├── __init__.py
 │   │   │   ├── endpoints/
@@ -21,11 +27,15 @@ shirikisha/
 │   │   │   │   ├── resources.py
 │   │   │   │   └── analytics.py
 │   │   │   └── deps.py         # Dependencies (auth, DB sessions)
+
 │   │   ├── core/
 │   │   │   ├── __init__.py
 │   │   │   ├── security.py     # Security utilities
+
 │   │   │   ├── cache.py        # Redis caching layer
+
 │   │   │   └── celery_app.py   # Async task queue
+
 │   │   ├── services/
 │   │   │   ├── __init__.py
 │   │   │   ├── leader_service.py
@@ -40,9 +50,11 @@ shirikisha/
 │   │   ├── test_api.py
 │   │   └── conftest.py
 │   ├── migrations/             # Alembic migrations
+
 │   ├── requirements.txt
 │   ├── .env.example
 │   ├── docker-compose.yml
 │   └── Dockerfile
 ├── frontend/                  # Separate frontend project
+
 └── README.md
